@@ -1,0 +1,457 @@
+.link-one {
+    color: inherit;
+    text-decoration: none;
+}
+
+.list-one {
+    list-style: none;
+}
+
+.port-one {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+    color: #000000;
+}
+
+.port-one:hover {
+    color: #2196f3;
+}
+
+.port-twee {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+    color: #2196f3;
+}
+
+.port-drie {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+    color: #ffffff;
+}
+
+.port-drie:hover {
+    color: #2196f3;
+}
+
+.twee-p:hover {
+    color: #2196f3;
+}
+
+.drie-p:hover {
+    color: #2196f3;
+}
+
+.port-vier {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+    color: #2196f3;
+}
+
+.one-bg:hover {
+    background-color: rgb(33, 150, 243);
+}
+
+.twee-bg:hover {
+    background-color: rgb(33, 150, 243);
+}
+
+.drie-bg:hover {
+    background-color: rgb(33, 150, 243);
+}
+
+.vier-bg:hover {
+    background-color: rgb(33, 150, 243);
+}
+
+.vijf-bg:hover {
+    background-color: rgb(33, 150, 243);
+}
+
+.bg {
+    width: 1600px;
+    height: 252px;
+    left: 0px;
+    top: 1628px;
+
+    background: #2f303a;
+}
+
+.one-p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+
+    letter-spacing: 0.03em;
+
+    color: #ffffff;
+}
+
+.twee-p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.drie-p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.st-one:hover {
+    color: rgb(33, 150, 243);
+}
+
+.pr-twee:hover {
+    color: rgb(33, 150, 243);
+}
+
+.cont-drie:hover {
+    color: rgb(33, 150, 243);
+}
+
+.info-one:hover {
+    color: #2196f3;
+}
+
+.nomb-twee:hover {
+    color: #2196f3;
+}
+
+.st-one {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+}
+
+.pr-twee {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+}
+
+.cont-drie {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+}
+
+.info-one {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    color: #757575;
+}
+
+.nomb-twee {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    color: #757575;
+}
+
+.one-bg {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 162%;
+    /* identical to box height, or 162% */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+    background: #f5f4fa;
+    border-radius: 4px;
+    border: 0;
+}
+
+.twee-bg {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 162%;
+    /* identical to box height, or 162% */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+    background: #f5f4fa;
+    border-radius: 4px;
+    border: 0;
+}
+
+.drie-bg {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 162%;
+    /* identical to box height, or 162% */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+    background: #f5f4fa;
+    border-radius: 4px;
+    border: 0;
+}
+
+.vier-bg {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 162%;
+    /* identical to box height, or 162% */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+    background: #f5f4fa;
+    border-radius: 4px;
+    border: 0;
+}
+
+.vijf-bg {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 162%;
+    /* identical to box height, or 162% */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+    background: #f5f4fa;
+    border-radius: 4px;
+    border: 0;
+}
+
+.one-bg:hover {
+    color: white;
+}
+
+.twee-bg:hover {
+    color: white;
+}
+
+.drie-bg:hover {
+    color: white;
+}
+
+.vier-bg:hover {
+    color: white;
+}
+
+.vijf-bg:hover {
+    color: white;
+}
+
+.zagolovok {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 200%;
+    /* identical to box height, or 200% */
+
+    letter-spacing: 0.06em;
+
+    color: #212121;
+}
+
+.text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 188% */
+
+    letter-spacing: 0.03em;
+
+    color: #757575;
+}
+
+.box-one {
+    width: 370px;
+    height: 404px;
+    left: 215px;
+    top: 262px;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+}
+
+.box-twee {
+    width: 370px;
+    height: 404px;
+    left: 615px;
+    top: 262px;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+}
+
+.box-drie {
+    width: 370px;
+    height: 404px;
+    left: 1015px;
+    top: 262px;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+}
+
+.box-vier {
+    width: 370px;
+    height: 404px;
+    left: 215px;
+    top: 696px;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+}
+
+.box-vijf {
+    width: 370px;
+    height: 404px;
+    left: 615px;
+    top: 696px;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+}
+
+.box-zes {
+    width: 370px;
+    height: 404px;
+    left: 1015px;
+    top: 696px;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+}
+
+.box-zeven {
+    width: 370px;
+    height: 404px;
+    left: 215px;
+    top: 1130px;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+}
+
+.box-acht {
+    width: 370px;
+    height: 404px;
+    left: 615px;
+    top: 1130px;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+}
+
+.box-negen {
+    width: 370px;
+    height: 404px;
+    left: 1015px;
+    top: 1130px;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    display: flex;
+}
+
+.bottom {
+    margin-bottom: auto;
+    justify-content: center;
+}
