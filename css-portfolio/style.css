@@ -107,6 +107,16 @@ body {
 
 /* ХЕДЕР */
 
+.top-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.border-bottom {
+    border: 1px solid #ececec;
+}
+
+/* logo */
 .logo {
     padding-top: 24px;
     padding-bottom: 25px;
@@ -120,9 +130,18 @@ body {
     color: var(--accent-color);
 }
 
+.logo:hover,
+.logo:focus {
+    color: var(--accent-color);
+}
+
 .top-conection {
     display: flex;
     margin-left: 94px;
+}
+
+.top-conection > .item:not(:last-child) {
+    margin-right: 55px;
 }
 
 .top-contacts {
@@ -138,12 +157,34 @@ body {
     margin-left: auto;
 }
 
-.nav-link {
-    margin-left: 54px;
+.top-contacts > .item:not(:last-child) {
+    margin-right: 55px;
 }
 
-.con-one {
-    margin-right: 50px;
+.link.current {
+    color: var(--accent-color);
+}
+
+.nav-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+.contacts {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
 }
 
 /* КНОПКИ */
@@ -168,8 +209,11 @@ button [type='button'] {
     margin-bottom: 50px;
 }
 
-.button-menu:hover {
+.button-menu:hover,
+.button-menu:focus,
+.button-menu:visited {
     background-color: var(--accent-color);
+    color: white;
 }
 
 .button-menu {
