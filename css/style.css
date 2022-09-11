@@ -167,6 +167,28 @@ ul {
     color: var(--secondary-text-color);
 }
 
+.contacts-link {
+    width: 16px;
+    height: 12px;
+    fill: #757575;
+    margin-right: 10px;
+}
+
+.contacts-link-2 {
+    width: 10px;
+    height: 16px;
+    fill: #757575;
+    margin-right: 10px;
+}
+
+.contacts-link:hover {
+    fill: var(--accent-color);
+}
+
+.contacts-link-2:hover {
+    fill: var(--accent-color);
+}
+
 /* Секція герой */
 .hero {
     margin-right: auto;
@@ -213,6 +235,7 @@ ul {
 }
 
 /*Наші переваги */
+
 .about-us {
     padding-top: 94px;
 }
@@ -545,7 +568,7 @@ ul {
     margin-top: -30px;
 }
 
-.projects > .item:not(:lact-child) {
+.projects > .item:not(:last-child) {
     flex-basis: calc((100% - 30px * 3) / 3);
     margin-left: 30px;
     margin-top: 30px;
@@ -566,9 +589,8 @@ ul {
 }
 
 .logo-footer {
-    display: block;
+    display: inline-flex;
     margin-bottom: 20px;
-
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -586,4 +608,8 @@ ul {
     font-size: 14px;
     line-height: 1.78;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.irem-list > .irem:not(:first-child) {
+    margin-top: 9px;
 }
