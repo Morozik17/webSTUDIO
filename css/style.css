@@ -424,24 +424,12 @@ ul {
     margin-top: 20px;
 }
 
-.section-icon-link {
+.icon-link {
     justify-content: center;
-    fill: #afb1b8;
 }
 
 .section-list-icon {
     display: inline-flex;
-}
-
-.section-icon-link {
-    width: 20px;
-    height: 20px;
-}
-.section-icon {
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    width: 170px;
-    height: 90px;
 }
 
 .section-list-icon > .section-icon:not(:first-child) {
@@ -449,51 +437,15 @@ ul {
     display: block;
 }
 
-.icon-list-1 {
-    width: 44.27px;
-    height: 49.23px;
-    margin-top: 20px;
-    margin-left: 63px;
-}
-
-.icon-list-2 {
-    width: 40px;
-    height: 52px;
-    margin-top: 19px;
-    margin-left: 65px;
-}
-
-.icon-list-3 {
-    width: 41px;
-    height: 42.6px;
-    margin-top: 24px;
-    margin-left: 65px;
-}
-
-.icon-list-4 {
-    width: 79.66px;
-    height: 42.02px;
-    margin-top: 24px;
-    margin-left: 45px;
-}
-
-.icon-list-5 {
-    width: 59px;
-    height: 47px;
-    margin-top: 22px;
-    margin-left: 56px;
-}
-
-.icon-list-6 {
-    width: 88.48px;
-    height: 45.44px;
-    margin-top: 22px;
-    margin-left: 41px;
-}
-
-.section-icon-link:hover,
-.section-icon-link:focus {
-    fill: #2196f3;
+.section-icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    fill: #afb1b8;
 }
 
 /* Сайт портфоліо */
@@ -548,6 +500,12 @@ ul {
 .description:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.section-icon-link:hover,
+.section-icon-link:focus {
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
 }
 
 /* Наші проекти */
