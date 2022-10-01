@@ -141,7 +141,19 @@ ul {
     margin-right: 55px;
 }
 
-.link.current {
+.nav-link.current::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--accent-color);
+}
+
+.nav-link.current {
+    position: relative;
     color: var(--accent-color);
 }
 
@@ -198,8 +210,15 @@ ul {
     max-width: 1600px;
     height: 600px;
     text-align: center;
-    background-image: url(../images/overlay.jpg);
+    background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/overlay.jpg);
     background-color: var(--hero-footer-background);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hero-title {
@@ -305,6 +324,19 @@ ul {
     margin-top: 30px;
 }
 
+.our-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+}
+
 /* наша команда */
 .our-team {
     background-color: var(--primary-background-color);
@@ -391,7 +423,7 @@ ul {
     background-color: #ffffff;
 }
 
-.social-icon > .social-icon-item:not(:last-child) {
+.social-icon > .social-icon-item {
     margin-left: 10px;
 }
 
@@ -421,20 +453,17 @@ ul {
 }
 
 .section-icon {
-    margin-top: 20px;
-}
-
-.icon-link {
-    justify-content: center;
+    margin-top: 30px;
 }
 
 .section-list-icon {
-    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
 }
 
 .section-list-icon > .section-icon:not(:first-child) {
     margin-left: 30px;
-    display: block;
 }
 
 .section-icon-link {
@@ -448,6 +477,12 @@ ul {
     fill: #afb1b8;
 }
 
+.section-icon-link:hover,
+.section-icon-link:focus {
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
+}
+
 /* Сайт портфоліо */
 
 /* Список фильтрів */
@@ -459,7 +494,6 @@ ul {
 
 .filter-menu .button-menu {
     padding: 6px 22px;
-
     background: #f5f4fa;
     font-weight: 500;
     font-size: 16px;
@@ -502,12 +536,6 @@ ul {
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.section-icon-link:hover,
-.section-icon-link:focus {
-    border: 1px solid var(--accent-color);
-    fill: var(--accent-color);
-}
-
 /* Наші проекти */
 .projects .link {
     color: var(--primary-text-color);
@@ -542,8 +570,18 @@ ul {
 .bg-footer {
     padding-top: 60px;
     padding-bottom: 60px;
-
     background-color: var(--hero-footer-background);
+}
+
+.bg-footer .container {
+    justify-content: space-between;
+    display: flex;
+}
+.widget-block {
+    flex-basis: calc((50% - 45px) / 2);
+}
+.widget-block:last-child {
+    flex-basis: calc(50% - 15px);
 }
 
 .logo-footer {
@@ -572,4 +610,66 @@ ul {
     margin-top: 9px;
 }
 
-/* щл */
+.join {
+    margin-top: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+}
+
+.social-icon-item-enter {
+    margin-top: 20px;
+}
+
+.social-icon-enter .icon-enter {
+    width: 20px;
+    height: 20px;
+}
+
+.social-icon-enter {
+    display: inline-flex;
+}
+
+.social-icon-link-enter {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    fill: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.social-icon-enter > .social-icon-item-enter {
+    margin-left: 10px;
+}
+
+.social-icon-item-enter {
+    width: 44px;
+    height: 44px;
+}
+
+.social-icon-link-enter:hover,
+.social-icon-link-enter:focus {
+    background-color: var(--accent-color);
+    fill: #ffffff;
+}
+
+.subscribe {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+}

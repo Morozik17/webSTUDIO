@@ -161,7 +161,19 @@ body {
     margin-right: 55px;
 }
 
-.link.current {
+.nav-link.current::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--accent-color);
+}
+
+.nav-link.current {
+    position: relative;
     color: var(--accent-color);
 }
 
@@ -310,5 +322,3 @@ li {
     line-height: 1.78;
     color: rgba(255, 255, 255, 0.6);
 }
-
-/* l */
