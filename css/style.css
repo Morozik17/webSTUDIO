@@ -322,25 +322,47 @@ ul {
     margin-top: -30px;
 }
 
-.our-work-list > .item {
+.our-work-list > .item-works {
     flex-basis: calc((100% - 30px * 3) / 3);
     margin-left: 30px;
     margin-top: 30px;
 }
 
-.our-text {
-    font-family: 'Roboto';
-    font-style: normal;
+.item-works {
+    position: relative;
+}
+
+.our-works-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    min-height: 70px;
+
+    background: rgba(47, 48, 58, 0.8);
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     text-align: center;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
-
     color: #ffffff;
 }
 
+.sections-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
 /* наша команда */
 .our-team {
     background-color: var(--primary-background-color);
