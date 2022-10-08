@@ -18,7 +18,7 @@ html {
     --hero-footer-background: #2f303a;
     --border-color: #eeeeee;
     --hero-color: rgba(47, 48, 58, 0.4);
-    --animation: 250ms 2s;
+    --animation: 250ms;
 }
 
 body {
