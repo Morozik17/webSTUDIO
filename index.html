@@ -61,7 +61,7 @@
                     <h1 class="hero-title">
                         Ефетивні рішення для вашого бізнесу
                     </h1>
-                    <button type="button" class="hero-button">
+                    <button type="button" class="hero-button" data-modal-open>
                         Замовити послугу
                     </button>
                 </div>
@@ -565,8 +565,9 @@
                                     ><svg class="icon-enter">
                                         <use
                                             href="./images/icons/sprite.svg#icon-linkedin-1"
-                                        ></use></svg
-                                ></a>
+                                        ></use>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -582,5 +583,14 @@
                 </div>
             </footer>
         </main>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <p class="modal-p">Залиште свої дані, ми Вам зателефонуємо</p>
+                <button type="button" class="btn-close" data-modal-close>
+                    X
+                </button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
