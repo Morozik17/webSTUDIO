@@ -512,110 +512,34 @@ ul {
     transition: fill var(--animation);
 }
 
-/* Сайт портфоліо */
-
-/* Список фильтрів */
-.filter-menu {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-}
-
-.filter-menu .button-menu {
-    padding: 6px 22px;
-    background: #f5f4fa;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    border: transparent;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.button-menu:hover,
-.button-menu:focus {
-    color: #ffffff;
-    background-color: var(--accent-color);
-}
-
-.filter-menu > .item:not(:last-child) {
-    margin-right: 8px;
-}
-
-/* < !-- Наші проекти --> */
-.projects-item {
-    margin-bottom: 30px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-}
-
-.description {
-    padding: 20px 24px;
-    background: #ffffff;
-    cursor: pointer;
-    border-right: 1px solid var(--border-color);
-    border-left: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
-}
-
-.description:hover,
-.description:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-/* Наші проекти */
-.projects .link {
-    color: var(--primary-text-color);
-}
-
-.projects-title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-}
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
-}
-
-.projects > .item:not(:last-child) {
-    flex-basis: calc((100% - 30px * 3) / 3);
-    margin-left: 30px;
-    margin-top: 30px;
-}
-
-.projects p {
-    color: var(--secondary-text-color);
-    font-size: 16px;
-    line-height: 1.87;
-}
-
 /* Підвал */
-.bg-footer {
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--hero-footer-background);
 }
 
-.bg-footer .container {
+.footer .container {
     justify-content: space-between;
     display: flex;
 }
-.widget-block {
-    flex-basis: calc((50% - 45px) / 2);
+
+.widget-blok {
+    flex-basis: calc((50% - 15px) / 2);
 }
-.widget-block:last-child {
+
+.widget-blok:last-child {
     flex-basis: calc(50% - 15px);
 }
 
+.logo__interactive {
+    color: var(--accent-color);
+}
+
 .logo-footer {
-    display: inline-flex;
+    display: block;
     margin-bottom: 20px;
+
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -623,50 +547,34 @@ ul {
     color: #ffffff;
 }
 
-.address {
+.address-list--address {
     font-size: 14px;
     line-height: 1.71;
     color: #ffffff;
 }
 
-.footer-contacts {
+.address-list__contacts {
     font-size: 14px;
     line-height: 1.78;
     color: rgba(255, 255, 255, 0.6);
 }
 
-.irem-list > .irem:not(:first-child) {
-    margin-top: 9px;
+.address-list__item {
+    margin-bottom: 10px;
 }
 
 .join {
-    margin-top: 20px;
-    font-family: 'Roboto';
-    font-style: normal;
+    margin-bottom: 20px;
+    display: block;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
+    line-height: 1.14;
     text-transform: uppercase;
-
     color: #ffffff;
 }
 
-.social-icon-item-enter {
-    margin-top: 20px;
-}
-
-.social-icon-enter .icon-enter {
-    width: 20px;
-    height: 20px;
-}
-
-.social-icon-enter {
-    display: inline-flex;
-}
-
-.social-icon-link-enter {
-    display: inline-flex;
+.footer-icon__link {
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -674,35 +582,104 @@ ul {
     border-radius: 50%;
     fill: #ffffff;
     background: rgba(255, 255, 255, 0.1);
+    transform: color var(--animation), backround-color var(--animatiom);
 }
 
-.social-icon-enter > .social-icon-item-enter {
-    margin-left: 10px;
-}
-
-.social-icon-item-enter {
-    width: 44px;
-    height: 44px;
-}
-
-.social-icon-link-enter:hover,
-.social-icon-link-enter:focus {
+.footer-icon__link:hover,
+.footer-icon__link:focus {
     background-color: var(--accent-color);
     fill: #ffffff;
 }
 
-.subscribe {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-    color: #ffffff;
+.social-icon {
+    display: inline-flex;
+    padding-bottom: 30px;
 }
 
+.social-icon__icon {
+    width: 20px;
+    height: 20px;
+}
+
+.social-icon__item {
+    width: 44px;
+    height: 44px;
+}
+
+.social-icon__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    fill: #afb1b8;
+    background-color: #ffffff;
+}
+
+.social-icon__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-icon__link:hover,
+.social-icon__link:focus {
+    background-color: var(--accent-color);
+    fill: #ffffff;
+}
+
+/* Підпишіться на розсилку */
+.footer-form__input {
+    width: 350px;
+    border-radius: 4px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.6);
+    background-color: var(--primary-background);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    margin-right: 12px;
+}
+
+.footer-form__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 10px;
+
+    background: #2196f3;
+    color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
+}
+
+.footer-form__button:hover,
+.footer-form__button:focus {
+    background-color: #188ce8;
+}
+
+.footer-form__icon {
+    fill: currentColor;
+    margin-left: 10px;
+}
 /* Modal */
 
 .backdrop {
