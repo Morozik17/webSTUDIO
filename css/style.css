@@ -171,7 +171,20 @@ ul {
     transition: color var(--animation);
 }
 
-.contacts {
+.header-contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.header-contacts__item {
+    margin-right: 50px;
+}
+
+.header-contacts__item:last-child {
+    margin-right: 0px;
+}
+
+.header-contacts__contacts {
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -182,26 +195,9 @@ ul {
     color: var(--secondary-text-color);
 }
 
-.contacts-link {
-    width: 16px;
-    height: 12px;
-    fill: #757575;
+.header-contacts__icon-contacts {
     margin-right: 10px;
-}
-
-.contacts-link-2 {
-    width: 10px;
-    height: 16px;
-    fill: #757575;
-    margin-right: 10px;
-}
-
-.contacts-link:hover {
-    fill: var(--accent-color);
-}
-
-.contacts-link-2:hover {
-    fill: var(--accent-color);
+    fill: currentColor;
 }
 
 /* Секція герой */
