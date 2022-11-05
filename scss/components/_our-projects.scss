@@ -1,0 +1,46 @@
+/* Наші проекти */
+
+.section__icon {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.section__item {
+  margin-top: 30px;
+  transition: color var(--animation);
+}
+
+.section__list-icon {
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.section__list-icon > .section__item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.section__icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+}
+
+.section__icon-link:hover,
+.section__icon-link:focus {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
+  transition: fill var(--animation);
+}

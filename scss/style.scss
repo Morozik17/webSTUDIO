@@ -1,4 +1,14 @@
-@charset "UTF-8";
+@import './utils';
+
+@import './components/header';
+@import './components/hero';
+@import './components/about-us';
+@import './components/our-work';
+@import './components/our-team';
+@import './components/our-projects';
+@import './components/footer';
+@import './components/modal';
+
 html {
   box-sizing: border-box;
 }
@@ -23,7 +33,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -46,6 +56,7 @@ body {
 }
 
 /* Утиліти класів */
+
 .link {
   text-decoration: none;
   color: inherit;
@@ -106,7 +117,7 @@ ul {
 .logo {
   padding-top: 24px;
   padding-bottom: 25px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.19;
   color: #000000;
@@ -131,7 +142,7 @@ ul {
 }
 
 .menu__nav.menu__current::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -149,6 +160,7 @@ ul {
 .menu__nav {
   padding-top: 32px;
   padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -158,6 +170,7 @@ ul {
 }
 
 /* Контакти */
+
 .header-contacts {
   display: flex;
   margin-left: auto;
@@ -174,6 +187,7 @@ ul {
 .header-contacts__contacts {
   padding-top: 32px;
   padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -195,7 +209,8 @@ ul {
   max-width: 1600px;
   height: 600px;
   text-align: center;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/overlay.jpg);
   background-color: var(--hero-footer-background);
   background-repeat: no-repeat;
   background-position: center;
@@ -235,6 +250,7 @@ ul {
 }
 
 /*Наші переваги */
+
 .about-us {
   padding-top: 94px;
 }
@@ -247,7 +263,7 @@ ul {
 }
 
 .about-us__set > .about-us__text-item {
-  flex-basis: calc((100% - 120px) / 4);
+  flex-basis: calc((100% - 30px * 4) / 4);
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -299,7 +315,7 @@ ul {
 }
 
 .our-work__list > .item__works {
-  flex-basis: calc((100% - 90px) / 3);
+  flex-basis: calc((100% - 30px * 3) / 3);
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -318,6 +334,7 @@ ul {
   margin: 0;
   width: 100%;
   min-height: 70px;
+
   background: rgba(47, 48, 58, 0.8);
   font-weight: 700;
   font-size: 14px;
@@ -328,16 +345,16 @@ ul {
 }
 
 .our-work__title {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+
   color: #212121;
 }
-
 /* наша команда */
 .our_-team {
   background-color: var(--primary-background-color);
@@ -360,7 +377,7 @@ ul {
 }
 
 .list-team__member {
-  flex-basis: calc((100% - 120px) / 4);
+  flex-basis: calc((100% - 30px * 4) / 4);
   margin-left: 30px;
   margin-top: 30px;
   margin-bottom: 10px;
@@ -368,7 +385,8 @@ ul {
   line-height: 1.18;
   text-align: center;
   background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -384,14 +402,16 @@ ul {
 }
 
 .list-team__paragraph {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   /* identical to box height */
+
   text-align: center;
   letter-spacing: 0.03em;
+
   color: #757575;
 }
 
@@ -438,14 +458,16 @@ ul {
 }
 
 /* Наші проекти */
+
 .section__icon {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+
   color: #212121;
 }
 
@@ -509,7 +531,8 @@ ul {
 .logo-footer {
   display: block;
   margin-bottom: 20px;
-  font-family: "Raleway", sans-serif;
+
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -603,10 +626,12 @@ ul {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
+
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: rgba(255, 255, 255, 0.6);
   background-color: var(--primary-background);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
   line-height: 1.25;
   letter-spacing: 0.03em;
   margin-right: 12px;
@@ -618,16 +643,22 @@ ul {
   align-items: center;
   width: 200px;
   padding: 10px;
+
   background: #2196f3;
   color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+
   cursor: pointer;
 }
 
@@ -642,6 +673,7 @@ ul {
 }
 
 /* Modal */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -667,7 +699,8 @@ ul {
   max-width: 528px;
   min-height: 581px;
   background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
 }
@@ -687,12 +720,13 @@ ul {
 }
 
 .modal-p {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
+
   color: #212121;
-}/*# sourceMappingURL=style.css.map */
+}
