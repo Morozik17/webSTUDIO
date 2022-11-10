@@ -1,4 +1,4 @@
-@import './utils';
+@import './utils/utils';
 
 @import './components/header';
 @import './components/hero';
@@ -8,3 +8,10 @@
 @import './components/our-projects';
 @import './components/footer';
 @import './components/modal';
+@import './utils/variables';
+@import './components/portfolio';
+@import './components/portfolio-button';
+@import './components/portfolio-projects';
+@import './components/portfolio-img';
+@import './components/portfolio-overlay';
+@import './components/portfolio-footer';
